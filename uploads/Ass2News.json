@@ -20,5 +20,22 @@
             "imgurl":"second-moon.jpg",
             "content":"NASA scientists calculated that Earth should have captured a second moon on Sunday (Sept. 29)"
         }
+        ],
+    "events":[
+        {
+            "title":"Events 1"
+        },
+        {
+            "title":"Events 2"
+        },
+        {
+            "title":"Events 3"
+        },
+        {
+            "title":"Events 4"
+        },
+        {
+            "title":"Events 5"
+        }
         ]
 }

@@ -55,6 +55,7 @@
   if (file_exists($jsonPath)) {
       $json_data = file_get_contents($jsonPath);
       $news = json_decode($json_data, true);
+      $events = json_decode($json_data, true); 
   } else {
       echo "Error: JSON file not found!";
   }
@@ -101,11 +102,11 @@
       <h4 id="events_tab">Events Tab</h4>
       <hr id="events_hr" />
       <ul id="events_ul">
-        <li>First Event</li>
-        <li>Second Event</li>
-        <li>Another Event</li>
-        <li>Yet Another Event</li>
-        <li>Final Event</li>
+        <li><?php echo htmlspecialchars($events['events'][0]['title']); ?></li>
+        <li><?php echo htmlspecialchars($events['events'][1]['title']); ?></li>
+        <li><?php echo htmlspecialchars($events['events'][2]['title']); ?></li>
+        <li><?php echo htmlspecialchars($events['events'][3]['title']); ?></li>
+        <li><?php echo htmlspecialchars($events['events'][4]['title']); ?></li>
       </ul>
       <hr id="events_hr" />
       <div id="events_links_div">
