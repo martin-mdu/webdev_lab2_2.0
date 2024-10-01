@@ -56,6 +56,8 @@
       $json_data = file_get_contents($jsonPath);
       $news = json_decode($json_data, true);
       $events = json_decode($json_data, true); 
+      $images = json_decode($json_data, true); 
+
   } else {
       echo "Error: JSON file not found!";
   }
@@ -154,7 +156,7 @@
     </div>
 
     <div class="text7_part">
-      <img id="picture_seven" src="pexels-trace-707046.jpg" />
+      <img src=<?php echo htmlspecialchars($images['images'][0]['imgurl']); ?> />
     </div>
 
     <div class="feed_part">
