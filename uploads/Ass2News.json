@@ -2,22 +2,22 @@
     "news":[
         {
             "title":"SpaceX's Next Starship Prototype Taking Shape", 
-            "imgurl":"pexels-a2pro-3422964.jpg",
+            "imgurl":"images/huracan.jpg",
             "content":"Construction of the test craft is proceeding apace, as two new photos posted on Twitter today (Sept. 17) by company founder and CEO Elon Musk reveal."
         },
         {
             "title":"NASA's Juno Mission Cheks Out Eclipse on Jupiter", 
-            "imgurl":"pexels-adrian-dorobantu-989175-2127733.jpg",
+            "imgurl":"images/ferrari.jpg",
             "content":"All is well on our largest neighbor; NASA's Juno spacecraft just managed to spot the shadow of Jupiter's moon, Io, passing over its marbled clouds."
         },
         {
             "title":"Europe Wants Ideas for Cave-Spelumking Moon Robots", 
-            "imgurl":"pexels-pashal-337909.jpg",
+            "imgurl":"images/lamborghini.jpg",
             "content":"As NASA makes a big push to land humans on the moon's surface by 2024, the European Space Agency (ESA) wants to learn more about the lunar caves that lie beneath."
         },
         {
             "title":"The Second Moon", 
-            "imgurl":"second-moon.jpg",
+            "imgurl":"images/second-moon.jpg",
             "content":"NASA scientists calculated that Earth should have captured a second moon on Sunday (Sept. 29)"
         }
         ],
@@ -40,10 +40,10 @@
         ],
     "images":[
         {
-            "imgurl":"rocket.jpg"
+            "imgurl":"images/rocket.jpg"
         },
         {
-            "imgurl":"rocket.jpg"
+            "imgurl":"images/rocket.jpg"
         }
         ]
 }
