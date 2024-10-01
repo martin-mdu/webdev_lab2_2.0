@@ -2,9 +2,9 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="lab1styles.css" />
-    <title>LAB1 Admin</title>
-    <link href="lab1logo.png" rel="icon" />
+    <link rel="stylesheet" href="lab2styles.css" />
+    <title>LAB2 Admin</title>
+    <link href="images/lab1logo.png" rel="icon" />
     <script>
         function uploadFile(event) {
             event.preventDefault(); // Prevent form from submitting the normal way
@@ -35,7 +35,7 @@
 
         function applyLatestFile() {
             // Redirect to main page after applying the latest JSON file
-            window.location.href = "lab1website.php";
+            window.location.href = "lab2website.php";
         }
     </script>
 </head>
@@ -43,8 +43,8 @@
 <body>
     <div class="top_page">
         <span id="circle">
-            <a href="lab1website.php">
-                <img id="picture_circle" src="lab1logo.png" />
+            <a href="lab2website.php">
+                <img id="picture_circle" src="images/lab1logo.png" />
             </a>
         </span>
     </div>

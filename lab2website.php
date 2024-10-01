@@ -2,9 +2,9 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="lab1styles.css" />
+  <link rel="stylesheet" href="lab2styles.css" />
   <title>LAB1</title>
-  <link href="lab1logo.png" rel="icon" />
+  <link href="images/lab1logo.png" rel="icon" />
 </head>
 
 <body>
@@ -13,7 +13,7 @@
 
     <span id="circle">
       <a href="lab1website.php">
-        <img id="picture_circle" src="lab1logo.png" />
+        <img id="picture_circle" src="images/lab1logo.png" />
       </a>
     </span>
 
@@ -25,7 +25,7 @@
         <a href="#">Link 4</a>
         <input type="text" placeholder="Search" />
         <span id="share_span">
-          <a href="#" class="share-icon"><img id="picture_share" src="pngegg.png" />
+          <a href="#" class="share-icon"><img id="picture_share" src="images/pngegg.png" />
           </a>
         </span>
 
@@ -37,7 +37,7 @@
         <a href="#">Link 4</a>
         <a href="#">Link 5</a>
         <a href="#">Link 6</a>
-        <a href="#">Link 7</a>
+        <a href="loginpage.php">Log in</a>
         <a href="adminpage.php">Admin</a>
       </div>
     </span>
@@ -133,7 +133,7 @@
 
     <div class="text5_part">
       <div class="part5_img_div">
-        <img id="picture_2" src="pexels-pashal-337909.jpg" />
+        <img id="picture_2" src="images/ferrari.jpg" />
         <div class="triangle"></div>
       </div>
       <div class="part5_text_div">
