@@ -45,9 +45,20 @@
   </div>
 
   <?php
-  $json_data = file_get_contents("Ass2News.json");
-  $news = json_decode($json_data, true);
-  ?>
+  // Get the latest uploaded JSON file name
+  $latestFile = file_get_contents("uploads/latest.json");
+  
+  // Construct the path to the latest JSON file
+  $jsonPath = "uploads/" . $latestFile;
+
+  // Check if the file exists and load the JSON content
+  if (file_exists($jsonPath)) {
+      $json_data = file_get_contents($jsonPath);
+      $news = json_decode($json_data, true);
+  } else {
+      echo "Error: JSON file not found!";
+  }
+?>
 
   <div class="first_section">
     <div class="news_part">
