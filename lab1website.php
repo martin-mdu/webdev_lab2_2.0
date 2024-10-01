@@ -116,14 +116,14 @@
     </div>
 
     <div class="news2_part">
+      <img src=<?php echo htmlspecialchars($news['news'][3]['imgurl']); ?> alt="Image 4">
       <div class="news2_textbox">
         <div class="titletab">
-          <div class="bluetab_n2">news title</div>
+          <div class="bluetab_n2"><?php echo htmlspecialchars($news['news'][3]['title']); ?></div>
           <div class="transparentdiv_n2"></div>
         </div>
         <div class="texttextbox_n2">
-          <p>News news news news news news news news news news news news news news news news news news news news news
-            news news news news news news news news news news</p>
+          <p><?php echo htmlspecialchars($news['news'][3]['content']); ?></p>
         </div>
       </div>
     </div>
