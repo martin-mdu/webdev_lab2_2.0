@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit;
     } else {
         // Error de autenticación
-        $error = "Nombre de usuario o contraseña incorrectos";
+        $error = "Username or password is incorrect.";
     }
 }
 ?>
