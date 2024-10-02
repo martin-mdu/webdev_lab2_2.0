@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Verificar si el formulario ha sido enviado
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Datos simulados (normalmente estarían en una base de datos)
