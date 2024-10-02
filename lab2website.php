@@ -13,15 +13,15 @@ session_start();
 </head>
 
 <body>
-<?php
-if (isset($_SESSION['loggedin']) === false) {
-  $_SESSION['loggedin'] = false;
-}
-?>
+  <?php
+  if (isset($_SESSION['loggedin']) === false) {
+    $_SESSION['loggedin'] = false;
+  }
+  ?>
   <div class="top_page">
 
     <span id="circle">
-      <a href="lab1website.php">
+      <a href="lab2website.php">
         <img id="picture_circle" src="images/lab1logo.png" />
       </a>
     </span>
@@ -148,13 +148,13 @@ if (isset($_SESSION['loggedin']) === false) {
 
     <div class="text5_part">
       <div class="part5_img_div">
-        <img id="picture_2" src="images/ferrari.jpg" />
+        <img id="picture_2" src=<?php echo htmlspecialchars($news['news'][4]['imgurl']); ?> />
         <div class="triangle"></div>
       </div>
       <div class="part5_text_div">
-        <h4 id="text_tab">Events Tab</h4>
+        <h4 id="text_tab"><?php echo htmlspecialchars($news['news'][4]['title']); ?></h4>
         <hr id="text_hr" />
-        <p id="p_text5">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt.
+        <p id="p_text5"><?php echo htmlspecialchars($news['news'][4]['content']); ?>
         </p>
         <a href="#">Link 1</a>
         <a href="#">Link 2</a>

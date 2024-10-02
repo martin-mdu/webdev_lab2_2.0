@@ -19,6 +19,11 @@
             "title":"The Second Moon", 
             "imgurl":"images/second-moon.jpg",
             "content":"NASA scientists calculated that Earth should have captured a second moon on Sunday (Sept. 29)"
+        },
+        {
+            "title":"Annular solar eclipse 2024", 
+            "imgurl":"images/eclipse.png",
+            "content":"On Wednesday, Oct. 2, the sun will be transformed into a dramatic ring of fire as an annular solar eclipse sweeps over Hawaii, southern Chile, and southern Argentina."
         }
         ],
     "events":[
