@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 
 
@@ -13,10 +13,11 @@
 </head>
 
 <body>
-  <?php
-    $_SESSION['login'] = false;
-  ?>
-
+<?php
+if (isset($_SESSION['loggedin']) === false) {
+  $_SESSION['loggedin'] = false;
+}
+?>
   <div class="top_page">
 
     <span id="circle">
@@ -45,8 +46,15 @@
         <a href="#">Link 4</a>
         <a href="#">Link 5</a>
         <a href="#">Link 6</a>
-        <a href="loginpage.php">Log in</a>
-        <a href="auxpage.php">Admin</a>
+        <a href="#">Link 7</a>
+        <a href="auxpage.php"><?php
+                              if ($_SESSION['loggedin']) {
+                                echo "Admin";
+                              } else {
+                                echo "Login";
+                              }
+
+                              ?></a>
       </div>
     </span>
 
@@ -55,21 +63,20 @@
   <?php
   // Get the latest uploaded JSON file name
   $latestFile = file_get_contents("uploads/latest.json");
-  
+
   // Construct the path to the latest JSON file
   $jsonPath = "uploads/" . $latestFile;
 
   // Check if the file exists and load the JSON content
   if (file_exists($jsonPath)) {
-      $json_data = file_get_contents($jsonPath);
-      $news = json_decode($json_data, true);
-      $events = json_decode($json_data, true); 
-      $images = json_decode($json_data, true); 
-
+    $json_data = file_get_contents($jsonPath);
+    $news = json_decode($json_data, true);
+    $events = json_decode($json_data, true);
+    $images = json_decode($json_data, true);
   } else {
-      echo "Error: JSON file not found!";
+    echo "Error: JSON file not found!";
   }
-?>
+  ?>
 
   <div class="first_section">
     <div class="news_part">

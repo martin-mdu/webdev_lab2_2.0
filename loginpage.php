@@ -11,8 +11,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Autenticación exitosa, guardar la sesión
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
-
-        $_SESSION['login'] = true;
         
         // Redirigir a la página de administración
         header('Location: adminpage.php');
