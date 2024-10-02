@@ -1,3 +1,8 @@
+<?php
+    session_start();
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -8,6 +13,9 @@
 </head>
 
 <body>
+  <?php
+    $_SESSION['login'] = false;
+  ?>
 
   <div class="top_page">
 
@@ -38,7 +46,7 @@
         <a href="#">Link 5</a>
         <a href="#">Link 6</a>
         <a href="loginpage.php">Log in</a>
-        <a href="adminpage.php">Admin</a>
+        <a href="auxpage.php">Admin</a>
       </div>
     </span>
 

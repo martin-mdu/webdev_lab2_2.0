@@ -1,7 +1,4 @@
 <?php
-// Iniciar la sesión
-session_start();
-
 // Verificar si el formulario ha sido enviado
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Datos simulados (normalmente estarían en una base de datos)
@@ -13,6 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Autenticación exitosa, guardar la sesión
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
+
+        $_SESSION['login'] = true;
         
         // Redirigir a la página de administración
         header('Location: adminpage.php');
