@@ -151,7 +151,7 @@
   <div class="third_section">
     <div class="video_part">
       <video autoplay muted loop>
-        <source src="lab1video.mp4" type="video/mp4">
+        <source src="images/lab1video.mp4" type="video/mp4">
       </video>
     </div>
 
